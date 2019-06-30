@@ -50,6 +50,7 @@ window.onload = () => {
           <p>${restaurant.contact.phone}</p>
           <a href=${restaurant.contact.site} target="_blank">${restaurant.contact.site}</a>
           <p>${restaurant.contact.email}</p>
+          <div class="fb-like" data-href="https://karenamicone.github.io/melp/index.html" data-width="" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
       </div>
       </li>`;
       restaurantContainer.insertAdjacentHTML("beforeend", card);
