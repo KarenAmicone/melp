@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>      
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <title>Melp</title>
+</head>
+<body>
+    <header class="section center">
+        <article class="header-container">
+            <h1>Melp</h1>
+        </article>
+    </header>
+    <div class="divider"></div>
+    <section class="container" id="info">
+        <article class="row" id="order-bttns">
+            <div class="col s12 center">
+                <h4>Find your restaurant</h4>
+                <p>Please click on the restaurant's name to see details</p>
+            </div>
+            <div class="col s6 center">
+                <h5>Order by name</h5>
+                <a id="upward-name" class="waves-effect red lighten-1 btn"><i class="material-icons center">arrow_upward</i></a>
+                <a id="downward-name" class="waves-effect red lighten-1 btn"><i class="material-icons center">arrow_downward</i></a>
+            </div>
+            <div class="col s6 center">
+                <h5>Order by rating</h5>
+                <a id="upward-rating" class="waves-effect red lighten-1 btn"><i class="material-icons center">arrow_upward</i></a>
+                <a id="downward-rating" class="waves-effect red lighten-1 btn"><i class="material-icons center">arrow_downward</i></a>
+            </div>
+        </article class="row">
+        <div class="col s12 center">
+            <ul class="collapsible popout" id="restaurants"></ul>
+        </div>
+    </section>
+    <footer class="page-footer red">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Melp</h5>
+                  <p class="grey-text text-lighten-4">Brought to you by: Laboratoria</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                  <h5 class="white-text">Follow us on:</h5>
+                  <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">
+                Photo by Brooke Lark on Unsplash
+              </div>
+            </div>
+          </footer>
+    <script src="index.js"></script>
+</body>
+</html>

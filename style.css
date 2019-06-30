@@ -1,0 +1,13 @@
+header{
+    height: 50vh;
+    background: url(/background.jpg);
+    background-size: cover;
+    display: grid;
+    justify-items: right;
+    align-items: center;
+}
+
+.header-container{
+    padding-right: 15%;
+    font-family: 'DM Serif Display', serif;
+}
