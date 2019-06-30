@@ -56,15 +56,7 @@ window.onload = () => {
     };
 
     const compare = (a,b)=>{
-      let keyA = a.name.toUpperCase();
-      let keyB = b.name.toUpperCase();
-      let comparison = 0;
-      if (keyA > keyB) {
-        comparison = 1;
-      } else if (keyA < keyB) {
-        comparison = -1;
-      }
-      return comparison;
+      return a.name.localeCompare(b.name)
       };
 
 //-----------------------------DOM------------------------------------
