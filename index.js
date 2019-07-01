@@ -3,6 +3,7 @@ const upwardName = document.getElementById('upward-name');
 const downwardName = document.getElementById('downward-name');
 const upwardRating = document.getElementById('upward-rating');
 const downwardRating = document.getElementById('downward-rating');
+const scrollUp = document.getElementById('scroll-up');
 let restaurants;
 
 window.onload = () => {
@@ -89,6 +90,23 @@ window.onload = () => {
         drawnRestaurants(element);
       });
     });
+
+    onscroll = () => {scrollUpFunc()};
+
+    function scrollUpFunc() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollUp.style.display = "block";
+      } else {
+        scrollUp.style.display = "none";
+      }
+    }
+
+    scrollUp.addEventListener('click', 
+    () => {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    ); 
 
     document.addEventListener('DOMContentLoaded', function() {
       let elems = document.querySelectorAll('.collapsible');

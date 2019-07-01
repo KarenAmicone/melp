@@ -11,3 +11,11 @@ header{
     padding-right: 15%;
     font-family: 'DM Serif Display', serif;
 }
+
+#scroll-up{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;     
+}
